@@ -26,13 +26,17 @@
         merge conflicts between commits changing the GA and those changing the V.
         -->
         <version>7.3.0.GA</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>helloworld-html5</artifactId>
     <packaging>war</packaging>
     <name>Quickstart: helloworld-html5</name>
     <description>A project that demonstrates Hello World using HTML5 and REST</description>
-
+    <repositories>
+      <repository>
+        <id>jboss-repo</id>
+        <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+      </repository>
+    </repositories>
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
